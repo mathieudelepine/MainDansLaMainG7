@@ -1,0 +1,101 @@
+body {
+	background-color: #fffde3;
+	height: 100%;
+}
+
+h1 { 
+	font-family: 'Noto Sans';
+ }
+
+.bg-blue{
+	background-color: #63cecb;
+}
+
+.bg-blanc{
+	background-color: #ffffff;
+}
+
+.bg-rouge{
+	background-color: #e57676;
+}
+
+/*footer*/
+  
+#sticky-footer {
+	flex-shrink: none;
+  }
+
+/*Fin footer*/
+
+
+/*Bontou Base*/
+.btn-primary {
+    background-color: #fffde3;
+    color: #e57676;
+    border: white;
+    padding: 10px 40px;
+    border-radius: 3px;
+    cursor: pointer; 
+    box-shadow: 2px 2px 2px 0 grey;
+    text-decoration: none;
+    margin-top: 1vh;
+  }
+
+ .btn-primary:hover {
+  	background-color: #63cecb;
+  	color: white;
+  }
+
+  /*Fin Bouton Base*/
+
+  /*Bonton Footer*/
+
+.btn-primary2 {
+    background-color: #63cecb;
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+  }
+
+ .btn-primary2:hover {
+  	background-color: #63cecb;
+  	color: black;
+  	text-decoration: underline;
+  }
+  
+.modal-body2 {
+ 	color: black;
+ }
+
+.modal-body2:hover {
+	color: black;
+	text-decoration: underline;
+} 
+
+/* Fin Bonton Footer*/
+
+ /*Bonton tuto*/
+
+ .btn-primary3 {
+    background-color: #e57676;
+    color: #fffde3;
+    border: white;
+    padding: 10px 40px;
+    border-radius: 3px;
+    cursor: pointer; 
+    box-shadow: 2px 2px 2px 0 grey;
+    text-decoration: none;
+    margin-top: 1vh;
+  }
+
+ .btn-primary3:hover {
+  	background-color: #63cecb;
+  	color: white;
+  }
+
+/* Fin Bonton tuto*/
+
+.text-uppercase {
+	font-size: 36px;
+	font-weight: bold;
+}

@@ -1,18 +1,454 @@
 <!DOCTYPE html>
+<html lang="fr">
 
-<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">  
+  <title>L'accessibilité d'un PDF</title>
+  <link rel="shortcut icon" href="assets/logo.png">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- CSS Base -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent static-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <!-- Logo Image -->
+        <img src="assets/logo.png" width="100" alt="Logo du site : MMI UX 2021" class="d-inline-block align-middle mr-2">
+        <!-- Logo Text -->
+        <span class="text-uppercase">L'accessibilité des PDF</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="assets/contrast.png" width="20" alt="" title="Modifier le contrast.">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="assets/zoom+.png" width="20" alt="" title="Augmenter la taille.">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="assets/zoom-.png" width="20" alt="" title="Réduire la taille.">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- FIN NAV BAR -->
+
+
+
+  <!-- 1 Accessibilité -->
+  <div class="container mt-5" id="accessibilite">
+    <div class="row">
+     <div class="col">
+     </div>
+    <div class="col-12">
+      <img src="assets/Accessibilite.png" class="img-fluid" width="2000" alt="Responsive image">
+
+      <button type="button" data-toggle="modal" data-target="#infos4" class="btn-lg btn-block btn btn-primary3 mt-3 mb-3">Texte Shéma</button>
+
+      <div class="modal" id="infos4">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Accessibilité</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>  
+            </div>
+            <div class="modal-body4">
+              1) Situation de handicap<br>
+              2) Aider<br>
+              3) Dispositifs<br>
+              4) Egalité<br>
+              5) Bonnes pratiques<br>
+              6) Simplifier<br>
+              7) Tout cela représente l'accessibilité<br>
+            </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-primary2" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+  <!-- Fin Accessibilité -->
+
+
+
+  <!-- 2 Vidéo -->
+  <div class="container-fluid bg-rouge" id="video">
+    <div class="mx-auto pt-5 mb-5 text-center">
+      <h1 class="mx-auto my-0 text-uppercase">Les bases</h1>
+    </div>
+    <div class="row">
+
+      <div class="col">
+      </div>
+
+      <div class="col-8">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/O0AlCJW0zX0" allowfullscreen></iframe>
+            </div>
+
+            <button type="button" data-toggle="modal" data-target="#infos" class="btn-lg btn-block btn btn-primary mt-3 mb-3">Texte Vidéo</button>
+
+            <div class="modal" id="infos">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Description de la vidéo</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                      </button>  
+                  </div>
+                  <div class="modal-body">
+                      Comment rendre accessible un PDF? <br> Tout d'abord, qu’est ce que l’accessibilité ? <br>
+                      L’accessibilité c’est le fait qu'un produit soit opérationnel par n'importe quel utilisateur sans que son expérience ne puisse être limité ou restreinte à cause d’une déficience.<br> Cela concerne donc les malvoyants et non-voyant, les personnes souffrant de troubles DYS, les personnes avec un handicap moteur par exemple. Mais, un problème d’accessibilité peut vraiment toucher tout le monde, si demain vous vous cassez les deux bras, vous aurez du mal à naviguer sur le web et si le soleil tape sur votre écran vous ne verrai plus rien<br><br>Je vais vous expliquer différentes méthodes pour rendre accessible un PDF.<br> Tout d’abord, il existe des techniques au niveau du design, pour faciliter l'accessibilité:<br>-Il faut penser à des polices de tailles suffisante pour être bien lisibles.<br> -Il faut penser à contraster Les couleurs pour faciliter la lecture.<br>-Il penser à adapter l'interface utilisateur par exemple en ajoutant des symboles à côté des mots sur les boutons.<br>Vous trouverez plus de détails sur la BD ci dessous! <br> <br>Il est possible de baliser un document pour permettre aux lecteurs de textes de lire les PDF,  il existe des logiciels comme Adobe Acrobate DC pour créer ce balisage <br>Plus précisément, le balisage consiste à ajouter une information sémantique appelée balise à chaque contenu d'un document pour préciser sa nature. Il existe ainsi des balises spécifiques pour définir des titres, des sous-titres, des paragraphes, des annotations, des listes, etc.
+                  </div>
+                  <div class="modal-footer">
+                        <button type="button" class="btn btn-primary2" data-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+
+      <div class="col">
+      </div>
+
+    </div>
+  </div>
+  <!-- Fin Vidéo -->
+
+
+
+  <!-- 3 BD -->
+  <div class="container mt-5 mb-5 " id="bd">
+    <div class="mx-auto text-center">
+      <h1 class="mx-auto my-0 text-uppercase">tuto design</h1>
+    </div>
+    <!-- 1 ère ligne -->
+    <div class="row">
+    <div class="card-deck">
+
+      <div class="col mt-5 ">
+        <div class="card shadow">
+            <img src="assets/case1.png" class="card-img" alt="...">
+          <div class="card-img-overlay"></div>
+        </div>
+      </div>
+
+      <div class="col-7 mt-5">
+        <div class="card shadow">
+            <img src="assets/case 2.png" class="card-img" alt="...">
+          <div class="card-img-overlay"></div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <!-- 2 ème ligne -->
+    <div class="row">
+      <div class="card-deck">
+  
+        <div class="col-12 mt-5">
+          <div class="card shadow">
+              <img src="assets/case3.png" class="card-img" alt="...">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+  
+      </div>
+      </div>
+  
+    <!-- 3 ème ligne -->
+    <div class="row">
+      <div class="card-deck">
+  
+        <div class="col mt-5">
+          <div class="card shadow">
+              <img src="assets/case 4.png" class="card-img" alt="...">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="col-7 mt-5">
+          <div class="card shadow">
+              <img src="assets/case 5.png" class="card-img" alt="...">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+  
+      </div>
+      </div>
+
+    <!-- 4 ème ligne -->
+    <div class="row">
+      <div class="card-deck">
+  
+        <div class="col mt-5">
+          <div class="card shadow">
+              <img src="assets/case6.png" class="card-img" alt="...">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="col-6 mt-5">
+          <div class="card shadow">
+              <img src="assets/case7.png" class="card-img" alt="...">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <!-- 5 ème ligne -->
+    <div class="row">
+      <div class="card-deck">
+  
+        <div class="col mt-5">
+          <div class="card shadow">
+              <img src="assets/case 8.png" class="card-img" alt="...">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="col-6 mt-5">
+          <div class="card shadow">
+              <img src="assets/case 9.png" class="card-img" alt="...">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+  
+      </div>
+    </div>    
+
+    <!-- 6 ème ligne -->
+    <div class="row">
+      <div class="card-deck">
+  
+        <div class="col mt-5">
+          <div class="card shadow">
+              <img src="assets/case 10.png" class="card-img" alt="...">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="col-5 mt-5">
+          <div class="card shadow">
+              <img src="assets/case 11 .png" class="card-img" alt="...">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+  
+      </div>
+    </div>    
+
+    <!-- 7 ème ligne -->
+    <div class="row">
+      <div class="card-deck">
+  
+        <div class="col mt-5">
+          <div class="card shadow">
+              <img src="assets/case 12.png" class="card-img" alt="...">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="col-5 mt-5">
+          <div class="card shadow">
+              <img src="assets/case 13.png" class="card-img" alt="...">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+  
+      </div>
+    </div>    
+
+    <!-- 8 ème ligne -->
+    <div class="row">
+      <div class="card-deck">
+  
+        <div class="col mt-5">
+          <div class="card shadow">
+              <img src="assets/case14.png" class="card-img" alt="...">
+          <div class="card-img-overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" data-toggle="modal" data-target="#infos5" class="btn-lg btn-block btn btn-primary3 mt-3 mb-3">Texte BD</button>
+
+    <div class="modal" id="infos5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title">BD</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>  
+          </div>
+          <div class="modal-body4">
+            Case 1 : Rendre un PDF accessible c’est pas compliqué  !<br>
+            case 2 :  petit 1 Taille et contraste “Bonjour, je suis Péripou et je vais vous accompagner pendant cette petite BD. “ <br>
+            Case 3 : “Il est important que le texte soit lisible , il n’y a aucune restriction sur la taille de la police bien qu’un police de grande taille est plus accessible. Mais,  un contraste de minimum 4.5 est nécessaire.”<br>
+            Case 4 : petit 2 - La police 
+<br>
+Case 5 : “Cela va de pair avec la taille et le contraste”
+<br>
+Case 6 :“Elle ne doit pas être trop fine et pas trop épaisse et rester simple. ”
+<br>
+Case 7 : “Le tout est de trouver le bon équilibre” 
+<br>
+Case 8 : petit 3 Le Daltonisme
+“Voyons un petit exemple pour cette partie”
+<br>
+Case 9 :“Si vous n’êtes pas atteint de daltonisme, ca c’est ce que vous voyez.”
+<br>
+Case 10 :“Et cela, en fonction du type et du degré de daltonisme, c’est ce que vous pourriez voir ”
+<br>
+Case 11: “La solution ?  ”
+<br>
+Case 12 :
+“Allez droit au but !
+Vous pouvez Garder un code couleur mais renseigner les information directement sur les endroits concernés ”
+<br>
+Case 13 : “TADA !”
+<br>
+Case 14 : “Vous voilà avec les bases nécessaires pour rendre vos documents accessibles !”
+<br>
+
+          </div>
+          <div class="modal-footer">
+                <button type="button" class="btn btn-primary2" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Fin BD -->
+
+
+
+  <!-- 4 Balisage -->
+<div class="container mt-5 mb-5" id="balisage">
+    <div class="mx-auto text-center">
+      <h1 class="mx-auto my-0 text-uppercase">tuto balisage</h1>
+    </div>
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col-12">
+        <img src="assets/hierarchie.svg" class="img-fluid" width="2000" alt="Responsive image">
+      </div>
+    </div>
+
+    <button type="button" data-toggle="modal" data-target="#infos3" class="btn-lg btn-block btn-primary3 mt-3 mb-3">Texte du schéma</button>
+
+    <div class="modal" id="infos3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title">schéma</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>  
+          </div>
+          <div class="modal-body3">
+            1) Depuis InDesign ou LibreOffice/word, il suffit de cocher la case adéquate.<br>
+            2) On peut aussi créer des PDF balisé depuis les logiciels de Microsoft Office ou Acrobat PDFMakerRenseigner.<br>
+            3) Identifier les titres et leur niveau à l’aide des styles de paragraphe.<br>
+            4) Associer chaque titre à un style de paragraphe.<br>
+            5) Associer une balise H, H1, H2, H3, H4, H5 ou H6 à chaque style de paragraphe appliqué à un titre.<br>
+            6) Utiliser les fonctions d’InDesign pour gérer les langues du document.<br>
+            7) Utiliser les fonctions d’InDesign pour créer des listes à puces ou listes numérotées.<br>
+            8)Utiliser les fonctions d’InDesign pour créer des tableaux de données et renseigner les lignes d’en-tête.<br>
+            9) Utiliser les fonctions d’InDesign pour insérer des liens hypertexte.<br>
+            10) Renseigner les textes de remplacement sur les visuels porteurs d’informations (images, imports Illustrator, imports PDF, etc.).<br>
+            11) Définir l’ordre de lecture des contenus à l’aide de la fenêtre Articles.<br>
+            12) Définir l’ordre de redistribution des contenus à l’aide des calques.<br>
+            13) Ajouter des signets permettant de naviguer dans les grandes parties du document.<br>
+            14) Exporter le document PDF balisé en incluant signets et hyperliens.
+          </div>
+          <div class="modal-footer">
+                <button type="button" class="btn btn-primary2" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  <!-- Fin Balisage -->
+
+</div>
+
+<!-- FOOTER -->
+<footer id="sticky-footer" class="py-4 bg-blue text-black">
+  <div class="container text-center">
+    <small>Copyright &copy; @Ethan-Piboyeux / @Samuel-Agut / @Malvina-Brauge / @Mathieu-Delepine / @Remi-Andrez / @Antoine-Beracochea </small>
+                <button type="button" data-toggle="modal" data-target="#sources" class="btn btn-primary2">Nos sources</button>
+                  <div class="modal" id="sources">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Nos sources</h4>
+                          <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                          </button>  
+                        </div>
+                      <div class="modal-body2">
+                       <a href="https://www.sefasinnovation.fr/accessibilite-des-documents/" target="_b lank">https://www.sefasinnovation.fr/accessibilite-des-documents/<br>
+                       <a href="https://www.pdf-accessible.com/wp-content/uploads/2015/01/manuel-balisage-acrobat_AcceDe.pdf" target="_blank">https://www.pdf-accessible.com/wp-content/uploads/2015/01/manuel-balisage-acrobat_AcceDe.pdf<br>
+                       <a href="https://helpx.adobe.com/fr/acrobat/using/accessibility-features-pdfs.html" target="_blank">https://helpx.adobe.com/fr/acrobat/using/accessibility-features-pdfs.html<br>
+                       <a href="https://www.ipedis.com/accessibilite-pdf" target="_blank">https://www.ipedis.com/accessibilite-pdf<br>
+                       <a href="https://www.sefasinnovation.fr/accessibilite-des-documents/" target="_blank">https://www.sefasinnovation.fr/accessibilite-des-documents/<br> 
+                       <a href="https://www.atalan.fr/" target="_blank">https://www.atalan.fr/<br>
+
+                    </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-primary2" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </footer>
+  <!-- FIN DU FOOTER -->
 
 </body>
+
 </html>
